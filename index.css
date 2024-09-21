@@ -11,8 +11,7 @@ body {
 }
 .container {
   border-style: solid;
-  width: 90%;
-  max-width: 37.5rem;
+  width:fit-content;
   border-radius: 20px;
   border-style: none;
   background-color: white;
