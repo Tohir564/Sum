@@ -4,6 +4,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
 }
 
 * {
@@ -116,6 +118,8 @@ h1 {
   .container {
     height: fit-content;
   }
+  body { background-image: url(images/pattern-background-desktop.svg);
+background-repeat: no-repeat; }
 }
 
 @media screen and (max-width: 300px) {
