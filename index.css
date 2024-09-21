@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(146, 192, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+* {
+  font-family: Red Hat Display;
+}
+.container {
+  border-style: solid;
+  width: 90%;
+  max-width: 37.5rem;
+  border-radius: 20px;
+  border-style: none;
+  background-color: white;
+  height: 580px;
+}
+
+.container > img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.text {
+  text-align: center;
+}
+
+.text > p {
+  line-height: 1.6;
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 0.65);
+}
+
+.music {
+  display: flex;
+  gap: 30px;
+  border-style: none;
+  width: 82%;
+  border-radius: 16px;
+  background-color: hsl(225, 100%, 98%);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 10px;
+  margin-left: 6%;
+}
+
+.music > img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  border-style: none;
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  padding: 14px;
+  width: 89%;
+  border-radius: 12px;
+  border-style: none;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 10px 20px gray;
+}
+
+button:hover { background-color: rgb(118, 118, 236);  }
+
+.buttons > p {
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 0.6);
+}
+
+.buttons > p >a:link { text-decoration: none;
+color: inherit; } 
+
+.buttons > p >a:hover { color: black; }
+
+
+
+.music > p {
+  font-size: 0.8568em;
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 0.75);
+  line-height: 1.4;
+}
+
+.music >p > a:link { text-decoration: none; }
+
+.music >p > a:hover { color: rgb(101, 101, 236); }
+a:link {
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 24px;
+}
+
+.annual {
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 0.9);
+}
+
+h1 {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 480px) {
+  .container > img { width: 100%;
+  }
+  .container {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    font-size: 5vw;
+  }
+  .music {
+    gap: 8px;
+  }
+}
+
